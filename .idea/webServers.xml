@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="45e415ae-30cc-4572-b2db-53dc825302a4" name="IKA AWS" url="http://sistemas.ika-hub.cl/dashboards">
+        <fileTransfer rootFolder="/var/www/sistemas/dashboards" accessType="SFTP" host="44.236.255.100" port="22" sshConfigId="aac722e3-2f5d-4afb-b9cd-678832d9808f" sshConfig="ubuntu@44.236.255.100:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

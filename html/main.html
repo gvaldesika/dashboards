@@ -1,0 +1,352 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IKA Mineria - Intranet Albemarle</title>
+    <meta name="description" content="Intranet Albemarle">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="vendors/jqvmap/dist/jqvmap.min.css">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+
+    <!-- Left Panel -->
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"></a>
+                <a class="navbar-brand hidden" href="#"><img src="images/logo2.png" alt="Logo"></a>
+            </div>
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="main.html"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+                    </li>
+                    <h3 class="menu-title">Menú Principal</h3>
+                    <!-- /.menu-title -->
+
+
+                    <!--
+					<li >
+                        <a href="#"> <i class="menu-icon fa fa-caret-square-o-right"></i>Actividades </a>
+                    </li>
+                    -->
+
+
+                    <li>
+                        <a href="estados_de_pago.html"> <i class="menu-icon fa fa-caret-square-o-right"></i>Estados de Pago </a>
+                    </li>
+
+                    <li>
+                        <a href="reajustes.html"> <i class="menu-icon fa fa-money"></i>Reajustes </a>
+                    </li>
+
+
+
+
+                    <!--
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-book"></i>Estados de Pago</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="fa fa-exclamation-triangle"></i><a href="#">Pendientes</a></li>                            
+							<li><i class="fa fa-check-square"></i><a href="#">Autorizados</a></li>                            
+                        </ul>
+                    </li>
+                    -->
+                    <h3 class="menu-title">Reporteria</h3>
+                    <!-- Reporteria Producción-->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart-o"></i>Operación</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-folder-open-o"></i><a href="kpi_produccion.html">KPI Generales</a></li>
+                            <li><i class="fa fa-folder-open-o"></i><a href="prod_disp_diaria.html">Productividad</a></li>
+                            <li><i class="fa fa-folder-open-o"></i><a href="prod_bd_report.html">BD Reports</a></li>
+                        </ul>
+                    </li>
+                    <!-- Reporteria Combustible-->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart-o"></i>Combustible</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-folder-open-o"></i><a href="kpi_combustible.html">KPI Generales</a></li>
+                            <li><i class="fa fa-folder-open-o"></i><a href="comb_carga_equipos.html">Cargas de Combustible</a></li>
+                            <li><i class="fa fa-folder-open-o"></i><a href="comb_rend_equipos.html">Rendimiento Equipos</a></li>
+
+                        </ul>
+                    </li>
+                    <!-- Reporteria DIsponibilidad-->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart-o"></i>Niveles de Servicio</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-folder-open-o"></i><a href="kpi_disponibilidad.html">KPI Generales</a></li>
+                            <li><i class="fa fa-folder-open-o"></i><a href="disp_dispon_equipos_mensual.html">Informe Disponibilidad</a></li>
+
+                        </ul>
+                    </li>
+
+                    <!--
+                    <h3 class="menu-title">Menú Administrador</h3>
+					
+					<li >
+                        <a href="#"> <i class="menu-icon fa fa-group"></i>Usuarios </a>
+                    </li>
+					
+					<li >
+                        <a href="#"> <i class="menu-icon fa fa-bars"></i>Partidas </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#"> <i class="menu-icon ti-email"></i>Widgets </a>
+                    </li>
+					
+                 
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-area-chart"></i>Maps</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-map-o"></i><a href="#">Google Maps</a></li>
+                            <li><i class="menu-icon fa fa-street-view"></i><a href="#">Vector Maps</a></li>
+                        </ul>
+                    </li>
+					-->
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+    </aside>
+    <!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">
+
+            <div class="header-menu">
+
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="#"><i class="fa fa-user"></i>Mi Perfil</a>
+                            <a class="nav-link" href="index.html"><i class="fa fa-power-off"></i> Salir</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </header>
+        <!-- /header -->
+        <!-- Header-->
+
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>
+                            <div class="fa fa-user"></div> Albemarle</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="page-header float-right">
+                    <div class="page-title">
+                        <ol class="breadcrumb text-right">
+                            <li class="active">Dashboard</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content mt-3">
+
+            <div class="col-sm-12">
+
+                <!-- Area de mensajes de sistema (opcional)-->
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+
+
+                        <div class="card">
+                            <div class="card-img-top">
+                                <div class="map" id="basic-map"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="images/albemarle_profile_2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title mb-3">Detalles del Contrato</h4>
+                                <p class="card-text">
+                                    <div class="fa fa-angle-double-right"></div> <b>Cliente:</b> Albemarle <br>
+                                    <div class="fa fa-angle-double-right"></div> <b>Dirección:</b> Camino Salar, Ruta X45, Toconao <br>
+                                    <div class="fa fa-angle-double-right"></div> <b>Teléfono:</b> +56 9 6618 4239 <br>
+                                    <div class="fa fa-angle-double-right"></div> <b>Administrador de Contrato:</b> Pedro González <br>
+                                    <div class="fa fa-angle-double-right"></div> <b>Correo Electrónico:</b> pedro.gonzalez@ika.cl <br>
+                                    <div class="fa fa-angle-double-right"></div> <b>Teléfono Adm.:</b> +56 9 6618 4239 <br>
+                                    <div class="fa fa-angle-double-right"></div> <b>Sitio Web:</b> http://www.ika.cl <br>
+                                    <div class="fa fa-angle-double-right"></div> <b>Contacto emergencias:</b> +56 2 2959 8080
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="card">
+                <div class="card-header">
+                    <strong class="card-title"><div class="fa fa-flag"></div> Indicadores diarios rápidos</strong>
+                </div>
+                <div class="card-body">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-flat-color-2">
+                            <div class="card-body pb-0">
+                                <h4 class="mb-0">
+                                    <span>95%</span>
+                                </h4>
+                                <p class="text-light">Nivel de Servicio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-flat-color-2">
+                            <div class="card-body pb-0">
+                                <h4 class="mb-0">
+                                    <span>1256 M³</span>
+                                </h4>
+                                <p class="text-light">Producción del día</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-flat-color-3">
+                            <div class="card-body pb-0">
+                                <h4 class="mb-0">
+                                    <span>6,5 Horas</span>
+                                </h4>
+                                <p class="text-light">Actividades del día</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-flat-color-4">
+                            <div class="card-body pb-0">
+                                <h4 class="mb-0">
+                                    <span>468 Lts</span>
+                                </h4>
+                                <p class="text-light">Combustible Extraído</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--/.col-->
+
+
+        </div>
+
+
+    </div>
+    <!-- .content -->
+    </div>
+    <!-- /#right-panel -->
+
+    <!-- Right Panel -->
+
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+    <script src="vendors/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/widgets.js"></script>
+    <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
+    <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script>
+        (function($) {
+            "use strict";
+
+            jQuery('#vmap').vectorMap({
+                map: 'world_en',
+                backgroundColor: null,
+                color: '#ffffff',
+                hoverOpacity: 0.7,
+                selectedColor: '#1de9b6',
+                enableZoom: true,
+                showTooltip: true,
+                values: sample_data,
+                scaleColors: ['#1de9b6', '#03a9f5'],
+                normalizeFunction: 'polynomial'
+            });
+        })(jQuery);
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3&sensor=false"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2jlT6C_to6X1mMvR9yRWeRvpIgTXgddM"></script>
+    <script src="vendors/gmaps/gmaps.min.js"></script>
+    <script src="assets/js/init-scripts/gmap/gmap.init.js"></script>
+</body>
+
+</html>
